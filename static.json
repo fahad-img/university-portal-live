@@ -2,6 +2,14 @@
   "root": "public",
   "clean_urls": false,
    "routes": {
-    "/login": "login.html"
+    "/*.html": "index.html",
+    "/route/**": "/login.html"
+
+  }
+}
+{
+  "routes": {
+    "/*.html": "index.html",
+    "/route/**": "bar/baz.html"
   }
 }
